@@ -235,7 +235,7 @@ if [[ "$CHECK_UPDATES" == "yes" || "$FORCE_UPDATES" == "yes" ]]; then
     sha256sum "$galaxy_role_requirements" > "$galaxy_role_requirements_chksum"
   fi
 
-  kolla_ansible_remote=https://github.com/chameleoncloud/kolla-ansible.git
+  kolla_ansible_remote=https://github.com/KTH-EXPECA/kolla-ansible.git
   kolla_ansible_checkout=${KOLLA_ANSIBLE_BRANCH:-chameleoncloud/xena}
   kolla_ansible_gitref="$VIRTUALENV/kolla-ansible.gitref"
   kolla_ansible_egglink="$VIRTUALENV/src/kolla-ansible"
